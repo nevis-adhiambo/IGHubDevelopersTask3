@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+nav{
+    -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  position: fixed;
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#ff4d4d;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+.active {
+    background-color: #ffffff;
+    color: #000;
+}
+
+li a:hover {
+    background-color: #ccc;
+}
+#home{
+    background: #ff4d4d;
+    color: white;
+    padding-top: 30vh;
+    color: #fff;
+    padding-left: 20px;
+    padding-bottom: 20vh;
+    text-align: center;
+}
+#home h1{
+    font-size: 50px;
+}
+#home button{
+    
+    background: #000;
+    color:#ffffff;
+    border: 2px solid #000;
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+}
+#link1{
+    background: #ffffff;
+    padding-left: 10vh;
+}
+#link1 .wrapper{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+i.fa-anchor, i.fa-coffee{
+    text-align: center;
+    padding-left: auto;
+    font-size: 13rem;
+    color: #ff4d4d;
+}
+.fa-anchor{
+    margin-top: 15%;
+    margin-right: 10%;
+}
+.fa-coffee{
+    margin-top: 10%;
+    margin-left: 20%
+}
+#link2{
+    background:#F0F0F0 ;
+    margin-top: 0%
+}
+#link2 .wrapper1{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.content{
+    width: 600px;
+}
+.light{
+    color: #909090  ;
+}
+#link3{
+    background:#888888 ;
+    text-align: center;
+    color: #ffffff;
+    height: 150px;
+    margin-top: 0%;
+}
+#link4{
+    background: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+    height: auto;
+}
+#icons{
+    justify-content: space-between;
+}
+@media(max-width: 576px){
+    #home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #home h1{
+        font-size: 30px;
+    }
+    #home p{
+
+    }
+    #home button{
+        width: 60px;
+    }
+    #link4{
+        display: flex;
+        align-items: center;
+    }
+}
